@@ -37,12 +37,13 @@ function startTyping() {
             setTimeout(() => {
                 index = 0;
                 textElement.textContent = "";
-                apologyImage.hidden = false;
                 function typeNextCharacter2() {
                     if (index < messageText2.length) {
                         textElement.textContent += messageText2.charAt(index);
                         index++;
                         setTimeout(typeNextCharacter2, 50);
+                    } else {
+                        apologyImage.hidden = false;
                     }
                 }
                 typeNextCharacter2();
