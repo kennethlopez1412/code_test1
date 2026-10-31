@@ -1,7 +1,7 @@
 const messageText =
     "I am sorry about what happened these past days. For what I have done, for what I have said. I am sorry for hurting you, for making you feel unseen and unheard. I don't want to make you feel that your feelings are being ignored."
 const messageText2 =
-    "I want to be that person who supports and always listens to you. I want you to be able to share anything with me, without the fear of being dismissed. i want to make you happy and see you smile."
+    "I want to be that person who supports and always listens to you. I want you to be able to share anything with me, without the fear of being dismissed. I want to make you happy and see you smile."
 const messageText3 =
     "Will you forgive me and accept this flower as a token of my apology?"
 function openEnvelope() {
