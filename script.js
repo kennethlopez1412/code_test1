@@ -20,30 +20,33 @@ function openEnvelope() {
 
 function startTyping() {
     const textElement = document.getElementById("typing-text");
-    if (!textElement) return;
+    const apologyImage = document.getElementById("apology-image");
+    if (!textElement || !apologyImage) return;
 
     let index = 0;
     textElement.textContent = "";
+    apologyImage.hidden = true;
 
     function typeNextCharacter() {
         if (index < messageText.length) {
             textElement.textContent += messageText.charAt(index);
             index++;
-            setTimeout(typeNextCharacter, 60);
+            setTimeout(typeNextCharacter, 50);
         } else {
             // Start typing the second message after a delay
             setTimeout(() => {
                 index = 0;
                 textElement.textContent = "";
+                apologyImage.hidden = false;
                 function typeNextCharacter2() {
                     if (index < messageText2.length) {
                         textElement.textContent += messageText2.charAt(index);
                         index++;
-                        setTimeout(typeNextCharacter2, 60);
+                        setTimeout(typeNextCharacter2, 50);
                     }
                 }
                 typeNextCharacter2();
-            }, 7000);
+            }, 6500);
         }
     }
 

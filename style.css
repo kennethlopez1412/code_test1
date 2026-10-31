@@ -365,6 +365,26 @@
             text-shadow: 0 0 10px rgba(255,255,255,0.4);
         }
 
+        .apology-image {
+            display: block;
+            max-width: min(80vw, 260px);
+            max-height: 30vh;
+            margin: 16px auto 0;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 0 18px rgba(255,255,255,0.25);
+            animation: imageFadeIn 3s ease forwards;
+        }
+
+        .apology-image[hidden] {
+            display: none;
+        }
+
+        @keyframes imageFadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
         .cursor {
             display: inline-block;
             width: 3px;
