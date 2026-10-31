@@ -37,12 +37,20 @@ function startTyping() {
             setTimeout(() => {
                 index = 0;
                 textElement.textContent = "";
+<<<<<<< Updated upstream
+=======
                 apologyImage.hidden = false;
+>>>>>>> Stashed changes
                 function typeNextCharacter2() {
                     if (index < messageText2.length) {
                         textElement.textContent += messageText2.charAt(index);
                         index++;
                         setTimeout(typeNextCharacter2, 50);
+<<<<<<< Updated upstream
+                    } else {
+                        apologyImage.hidden = false;
+=======
+>>>>>>> Stashed changes
                     }
                 }
                 typeNextCharacter2();
